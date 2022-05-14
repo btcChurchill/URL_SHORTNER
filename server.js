@@ -3,8 +3,8 @@ const mongoose = require('mongoose')
 const ShortUrl = require('./models/shortUrl')
 const app = express()
 
-const PORT = process.env.PORT || 3000;
-const uri = process.env.MONGODB_URI || 'mongodb+srv://admin:churchill123@cluster0.nbivu.mongodb.net/shortUrl?retryWrites=true&w=majority';
+const PORT = process.env.PORT;
+const uri = process.env.MONGODB_URI;
 
 mongoose.connect(uri, {
   useNewUrlParser: true, useUnifiedTopology: true
